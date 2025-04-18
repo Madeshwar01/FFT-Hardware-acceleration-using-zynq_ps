@@ -1,4 +1,4 @@
-# FFT-Hardware-acceleration-using-zyng-ps
+# FFT-Hardware-acceleration-using-zynq-ps
 ## Overview
 Implemented the Fast Fourier Transform (FFT) using a hardware accelerator in the Zynq PL. Generated input data is first loaded into the PS DDR memory by the controlling Vitis software. The CPU then copies this data into an intermediate Block RAM (BRAM) in the PL. Subsequently, an AXI DMA controller reads the data from the intermediate BRAM, streams it to the FFT IP core, receives the results from the FFT, and writes them to a final Output BRAM in the PL. The PS can then read the results from the Output BRAM.
 ## Architecture: 
